@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TZ computer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="top-social-bar">
+      <a class="bar-text" href="#about-contact">About | Contact</a>
+    </div>
+
+    <header class="header1">
+      <div class="logo-area">
+        <a class="logo" href="index.html">
+          <img src="images/logo.png" alt="TZ computer Logo" />
+        </a>
+      </div>
+
+      <div class="right-section">
+        <span class="whish-list"
+          ><img src="images/heart.png" alt="Wishlist"
+        /></span>
+        <a
+          href="#login-section"
+          class="user"
+          data-bs-toggle="modal"
+          data-bs-target="#login-section"
+          style="cursor: pointer"
+        >
+          <img src="images/user.png" alt="User" />
+        </a>
+      </div>
+    </header>
+
+    <div class="modal fade" id="login-section" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" />
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" id="login-button">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="welcome-popup" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="welcome-message">
+              Welcome! You have successfully logged in.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="images/welcome.png"
+            class="d-block w-50 mx-auto"
+            alt="Welcome to TZ computer"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="images/adver.gif"
+            class="d-block w-100"
+            alt="Advertisement"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="nav-bar">
+      <table bgcolor="#f0f0f0" width="100%" cellspacing="3" cellpadding="10">
+        <tr bgcolor="#ffffff" align="center">
+          <td width="33%">
+            <a href="#laptop-section">
+              <img
+                width="50"
+                height="50"
+                src="images/laptop.png"
+                alt="TZ laptop Logo"
+              />
+              <p class="laptop">Laptops</p>
+            </a>
+          </td>
+          <td width="33%">
+            <a href="#pc-section">
+              <img
+                width="50"
+                height="50"
+                src="images/desktop.png"
+                alt="TZ desktop Logo"
+              />
+              <p class="desktop">PCs</p>
+            </a>
+          </td>
+          <td width="33%">
+            <a href="#accessories-section">
+              <img
+                width="50"
+                height="50"
+                src="images/Accessories.png"
+                alt="TZ accessories Logo"
+              />
+              <p class="accessories">Accessories</p>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <p id="laptop-section" class="Sections">Laptops</p>
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/laptop1.jpg" alt="Laptop 1" />
+      </a>
+      <p class="product-name"><strong>Laptop 1</strong></p>
+      <p class="product-price"><strong>Price: $1,000</strong></p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+    </div>
+
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/laptop1.jpg" alt="Laptop 2" />
+      </a>
+      <p class="product-name"><strong>Laptop 2</strong></p>
+      <p class="product-price"><strong>Price: $2,900</strong></p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+    </div>
+
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/laptop3.jpg" alt="Laptop 3" />
+      </a>
+      <p class="product-name"><strong>Laptop 3</strong></p>
+      <p class="product-price"><strong>Price: $1,000</strong></p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+    </div>
+
+    <p id="pc-section" class="Sections">PC</p>
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/pc1.jpg" alt="PC 1" />
+      </a>
+      <p class="product-name"><strong>PC 1</strong></p>
+      <p class="product-price"><strong>Price: $1,000</strong></p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+    </div>
+
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/pc1.jpg" alt="PC 2" />
+      </a>
+      <p class="product-name"><strong>PC 2</strong></p>
+      <p class="product-price"><strong>Price: $2,900</strong></p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+    </div>
+
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/pc1.jpg" alt="PC 3" />
+      </a>
+      <p class="product-name"><strong>PC 3</strong></p>
+      <p class="product-price"><strong>Price: $3,500</strong></p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+    </div>
+
+    <p id="accessories-section" class="Sections">Accessories</p>
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/mouse.jpg" alt="Accessory 1" />
+      </a>
+      <p class="product-name"><strong>Accessories 1</strong></p>
+      <p class="product-price"><strong>Price: $1,000</strong></p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+      <p class="info">info1</p>
+    </div>
+
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/mouse.jpg" alt="Accessory 2" />
+      </a>
+      <p class="product-name"><strong>Accessories 2</strong></p>
+      <p class="product-price"><strong>Price: $2,900</strong></p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+      <p class="info">info2</p>
+    </div>
+
+    <div class="product-preview">
+      <a href="product1.html">
+        <img class="card-img" src="images/mouse.jpg" alt="Accessory 3" />
+      </a>
+      <p class="product-name"><strong>Accessories 3</strong></p>
+      <p class="product-price"><strong>Price: $3,500</strong></p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+      <p class="info">info3</p>
+    </div>
+
+    <div class="checkout">
+      <a href="cart-inventory.html"
+        ><img width="50" src="images/shopping-cart.png" alt="Cart"
+      /></a>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <footer id="about-contact" class="footer">
+      <p class="about">we are a school project</p>
+      <p class="contact">Contact us at: info@tzcomputer.com</p>
+      <p class="contact">0123456789</p>
+      <p class="footer-text">© 2026 TZ computer. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

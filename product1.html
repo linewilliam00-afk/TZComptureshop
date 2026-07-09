@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="top-social-bar">
+      <a class="bar-text" href="#about-contact">About | Contact</a>
+    </div>
+
+    <header class="header1">
+      <div class="logo-area">
+        <a class="logo" href="index">
+          <img src="images/logo.png" alt="TZ computer Logo" />
+        </a>
+      </div>
+
+      <div class="right-section">
+        <span class="whish-list"
+          ><img src="images/heart.png" alt="Wishlist"
+        /></span>
+        <a
+          href="#login-section"
+          class="user"
+          data-bs-toggle="modal"
+          data-bs-target="#login-section"
+          style="cursor: pointer"
+        >
+          <img src="images/user.png" alt="User" />
+        </a>
+      </div>
+    </header>
+
+    <div class="modal fade" id="login-section" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" />
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary" id="login-button">
+              Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="welcome-popup" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Welcome</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="welcome-message">
+              Welcome! You have successfully logged in.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent">
+      <div class="div2">
+        <img src="images/laptop1.jpg" alt="Laptop 1" />
+      </div>
+      <div class="div4">
+        <p class="laptop-name"><strong>Laptop 1</strong></p>
+        <p class="laptop-price"><strong>Price: $1,000</strong></p>
+        <p class="info">Intel Core i5</p>
+        <p class="info">16GB RAM</p>
+        <p class="info">512GB SSD</p>
+        <p class="info">Full HD Display</p>
+        <div id="add-to-cart" class="add-to-cart">ADD TO CART</div>
+        <div id="cart-popup" class="cart-popup">Added to cart!</div>
+      </div>
+    </div>
+
+    <div class="checkout">
+      <a href="cart-inventory.html"
+        ><img width="50" src="images/shopping-cart.png" alt="Cart"
+      /></a>
+    </div>
+
+    <script src="js/script.js"></script>
+
+    <footer id="about-contact" class="footer">
+      <p class="about">we are a school project</p>
+      <p class="contact">Contact us at: info@tzcomputer.com</p>
+      <p class="contact">0123456789</p>
+      <p class="footer-text">© 2026 TZ computer. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
